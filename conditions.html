@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONDITIONS</title>
+    <script></script>
+  </head>
+  <body>
+        <script>
+           const age = 17;
+           const pays = "US";
+           const peutConduireEnFrance = pays !=="FR" || age < 18;
+           const peutConduireAuxUsa = pays !=="US" && age < 16;
+           
+           switch (pays) {
+            case "CI":
+                console.log("JE SUIS DANS LA FILIALE DE LA CÔTE D'IVOIRE");
+                break;
+            case "BN":
+                console.log("JE SUIS DANS LA FILIALE DU BENIN");
+                break;
+            default:
+                console.log("JE SUIS DANS UNE FILIALE INCONNUE");
+                break;
+           }
+        </script>
+  </body>
+</html>
